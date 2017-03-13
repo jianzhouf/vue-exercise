@@ -2,6 +2,7 @@
   <div class="hello">
     <ul>
       <li><router-link to="/tagList">Go to tagList</router-link></li>
+      <li><router-link to="/simpleTab">Go to simpleTab</router-link></li>
     </ul>
   </div>
 </template>
@@ -21,7 +22,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 h1, h2 {
   font-weight: normal;
 }
@@ -29,12 +30,13 @@ h1, h2 {
 ul {
   list-style-type: none;
   padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 100px;
+  }
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+
 
 a {
   color: #42b983;
